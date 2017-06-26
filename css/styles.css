@@ -1,0 +1,852 @@
+@-webkit-keyframes sm-bounce {
+  /* line 17, ../sass/_common.sass */
+  0% {
+    margin: 1em 0;
+  }
+
+  /* line 19, ../sass/_common.sass */
+  50% {
+    top: 1.3em 0;
+  }
+
+  /* line 21, ../sass/_common.sass */
+  100% {
+    top: 1em 0;
+  }
+}
+
+@-moz-keyframes sm-bounce {
+  /* line 17, ../sass/_common.sass */
+  0% {
+    margin: 1em 0;
+  }
+
+  /* line 19, ../sass/_common.sass */
+  50% {
+    top: 1.3em 0;
+  }
+
+  /* line 21, ../sass/_common.sass */
+  100% {
+    top: 1em 0;
+  }
+}
+
+@-ms-keyframes sm-bounce {
+  /* line 17, ../sass/_common.sass */
+  0% {
+    margin: 1em 0;
+  }
+
+  /* line 19, ../sass/_common.sass */
+  50% {
+    top: 1.3em 0;
+  }
+
+  /* line 21, ../sass/_common.sass */
+  100% {
+    top: 1em 0;
+  }
+}
+
+@keyframes sm-bounce {
+  /* line 17, ../sass/_common.sass */
+  0% {
+    margin: 1em 0;
+  }
+
+  /* line 19, ../sass/_common.sass */
+  50% {
+    top: 1.3em 0;
+  }
+
+  /* line 21, ../sass/_common.sass */
+  100% {
+    top: 1em 0;
+  }
+}
+
+/* line 24, ../sass/_common.sass */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 27, ../sass/_common.sass */
+body {
+  font-family: "微軟正黑體", "Arial";
+  background: url(".././img/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 32, ../sass/_common.sass */
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+/* line 34, ../sass/_common.sass */
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 37, ../sass/_common.sass */
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.6);
+  outline: 0px solid red;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 41, ../sass/_common.sass */
+::selection {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* line 45, ../sass/_common.sass */
+.pull-right {
+  float: right;
+}
+
+/* line 48, ../sass/_common.sass */
+.cv {
+  margin: 0 auto;
+}
+
+/* line 51, ../sass/_common.sass */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 55, ../sass/_common.sass */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin: 0 0 1em 0;
+}
+
+/* line 61, ../sass/_common.sass */
+.text-center {
+  text-align: center;
+}
+
+/* line 63, ../sass/_common.sass */
+.text-left {
+  text-align: left;
+}
+
+/* line 66, ../sass/_common.sass */
+.hidden {
+  display: none;
+}
+
+/* line 69, ../sass/_common.sass */
+.padding-left-05 {
+  padding: 0 0 0 0.5em;
+}
+
+/* line 71, ../sass/_common.sass */
+.padding-right-05 {
+  padding: 0 0.5em 0 0;
+}
+
+/* line 73, ../sass/_common.sass */
+.padding-x-05 {
+  padding: 0 0.5em;
+}
+
+/* line 76, ../sass/_common.sass */
+.load-ani-left {
+  opacity: 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  -webkit-transition-delay: 1s;
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+/* line 11, ../sass/_header.sass */
+.header {
+  margin: 4% 0 0 0;
+  opacity: 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+/* line 15, ../sass/_header.sass */
+.header > .cv-title {
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  font-size: 32pt;
+}
+/* line 20, ../sass/_header.sass */
+.header > .pull-right {
+  margin: 1.2em 0 0 0;
+}
+/* line 22, ../sass/_header.sass */
+.header > .pull-right > a {
+  opacity: 0.6;
+}
+/* line 24, ../sass/_header.sass */
+.header > .pull-right > a:not(:last-child) {
+  padding: 0 0.3em 0 0;
+}
+/* line 26, ../sass/_header.sass */
+.header > .pull-right > a:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  /* line 2, ../sass/_rwd.sass */
+  .cv {
+    width: 650px;
+  }
+
+  /* line 4, ../sass/_rwd.sass */
+  .hidden-mobile {
+    display: none;
+  }
+
+  /* line 6, ../sass/_rwd.sass */
+  .content.hidden {
+    display: inherit;
+  }
+
+  /* line 8, ../sass/_rwd.sass */
+  .col.s6 {
+    width: 48%;
+    display: inline-block;
+  }
+}
+@media (min-width: 992px) {
+  /* line 12, ../sass/_rwd.sass */
+  .cv {
+    width: 970px;
+  }
+
+  /* line 14, ../sass/_rwd.sass */
+  .col.m3 {
+    width: 25%;
+    float: left;
+  }
+
+  /* line 17, ../sass/_rwd.sass */
+  .col.m4 {
+    width: 33.33333%;
+    float: left;
+    padding: 0 0.5em 0 0;
+  }
+
+  /* line 21, ../sass/_rwd.sass */
+  .col.m8 {
+    width: 66.66667%;
+    float: left;
+    padding: 0 0 0.5em 0;
+  }
+
+  /* line 25, ../sass/_rwd.sass */
+  .col.m5 {
+    width: 50%;
+    float: left;
+  }
+
+  /* line 28, ../sass/_rwd.sass */
+  .col.m12 {
+    width: 100%;
+  }
+
+  /* line 31, ../sass/_rwd.sass */
+  .skill-border {
+    min-height: 197px;
+  }
+
+  /* line 33, ../sass/_rwd.sass */
+  .self, .content {
+    height: 605px;
+    overflow: auto;
+  }
+
+  /* line 37, ../sass/_rwd.sass */
+  .prev-page {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
+    transform: rotateY(-90deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    z-index: 0;
+    opacity: 0;
+  }
+
+  /* line 47, ../sass/_rwd.sass */
+  .next-page {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transition: all 0.8s ease-in-out;
+    -moz-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    z-index: -1;
+    opacity: 1;
+  }
+
+  /* line 57, ../sass/_rwd.sass */
+  .go-top {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 61, ../sass/_rwd.sass */
+  .cv {
+    width: 1170px;
+  }
+
+  /* line 63, ../sass/_rwd.sass */
+  .content {
+    height: 605px;
+    overflow: auto;
+  }
+
+  /* line 66, ../sass/_rwd.sass */
+  .go-top {
+    display: none;
+  }
+}
+/* line 1, ../sass/_self.sass */
+.self {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.5em;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+/* line 5, ../sass/_self.sass */
+.self .self-info {
+  border: 1px solid white;
+  padding: 2em;
+}
+/* line 8, ../sass/_self.sass */
+.self .self-info > .name {
+  color: white;
+  font-size: 18pt;
+  font-weight: bold;
+}
+/* line 12, ../sass/_self.sass */
+.self .self-info > .sname {
+  color: white;
+  font-size: 12pt;
+  margin: 0 0 1em 0;
+}
+/* line 16, ../sass/_self.sass */
+.self .self-info > hr {
+  margin: 2em 0 2em 0;
+}
+/* line 19, ../sass/_self.sass */
+.self .self-info > .menu ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+/* line 23, ../sass/_self.sass */
+.self .self-info > .menu ul > a > li {
+  color: white;
+  padding: 1em 1em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 27, ../sass/_self.sass */
+.self .self-info > .menu ul > a > li > span.cn {
+  font-size: 16pt;
+}
+/* line 29, ../sass/_self.sass */
+.self .self-info > .menu ul > a:not(:last-child) > li {
+  border-bottom: 1px dotted white;
+}
+/* line 31, ../sass/_self.sass */
+.self .self-info > .menu ul > a > li:hover {
+  background: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+/* line 34, ../sass/_self.sass */
+.self .self-info > .menu ul > a > li.menu-active {
+  background: rgba(255, 255, 255, 0.6);
+  color: black;
+}
+/* line 37, ../sass/_self.sass */
+.self .self-info > img.tag {
+  position: absolute;
+  top: 15em;
+}
+
+/* line 1, ../sass/_content.sass */
+.content {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.5em 2em;
+  color: white;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+/* line 6, ../sass/_content.sass */
+.content > .title {
+  font-size: 18pt;
+  color: white;
+}
+/* line 9, ../sass/_content.sass */
+.content > .about {
+  margin: 1em 0 0 0;
+}
+/* line 11, ../sass/_content.sass */
+.content > .about > .base-info, .content > .about > a.base-info {
+  margin: 0 0 0.5em 0;
+  display: block;
+}
+/* line 14, ../sass/_content.sass */
+.content > .des {
+  border: 1px solid white;
+  margin: 1em 0;
+  padding: 1.5em;
+}
+
+/* line 19, ../sass/_content.sass */
+.content::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+/* line 21, ../sass/_content.sass */
+.content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+/* line 23, ../sass/_content.sass */
+.content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.6);
+  outline: 0px solid red;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 1, ../sass/_print.sass */
+.print {
+  color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin: 0 0 2em 0;
+  height: 30px;
+  width: 30px;
+  margin: 1em 0;
+  opacity: 0;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 9999;
+  -webkit-animation: sm-bounce 0.3s infinite alternate;
+  -moz-animation: sm-bounce 0.3s infinite alternate;
+  -o-animation: sm-bounce 0.3s infinite alternate;
+  animation: sm-bounce 0.3s infinite alternate;
+}
+/* line 16, ../sass/_print.sass */
+.print > span {
+  pointer-events: none;
+}
+
+/* line 18, ../sass/_print.sass */
+.print:hover {
+  background: rgba(255, 255, 255, 0.4);
+  color: black;
+}
+
+/* line 1, ../sass/_edu.sass */
+.exp {
+  padding: 0.3em 1em;
+}
+/* line 3, ../sass/_edu.sass */
+.exp > .edu {
+  padding: 1.5em 1.5em 0.3em 1.5em;
+  border: 1px solid white;
+  margin: 0 0 2em 0;
+}
+/* line 8, ../sass/_edu.sass */
+.exp > .edu > .school > .name {
+  display: inline;
+  font-size: 16pt;
+  font-weight: bold;
+}
+/* line 12, ../sass/_edu.sass */
+.exp > .edu > .school > .pull-right.date {
+  margin: 0.6em 0 0 0;
+}
+/* line 14, ../sass/_edu.sass */
+.exp > .edu > .school > .dep {
+  margin: 0 0 1em 0;
+}
+
+/* line 17, ../sass/_edu.sass */
+.exp > .edu > ul.opt, .comp > ul.opt {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* line 22, ../sass/_edu.sass */
+.exp > .edu > ul.opt > li, .comp > ul.opt > li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+}
+/* line 29, ../sass/_edu.sass */
+.exp > .edu > ul.opt > li:hover, .comp > ul.opt > li:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+/* line 31, ../sass/_edu.sass */
+.exp > .edu > ul.opt > li.active, .comp > ul.opt > li.active {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 2, ../sass/_exp.sass */
+.exp > .comp {
+  padding: 1.5em 1.5em 0.3em 1.5em;
+  border: 1px solid white;
+}
+/* line 6, ../sass/_exp.sass */
+.exp > .comp > .corp > .name {
+  display: inline;
+  font-size: 16pt;
+  font-weight: bold;
+}
+/* line 10, ../sass/_exp.sass */
+.exp > .comp > .corp > .pull-right.date {
+  margin: 0.6em 0 0 0;
+}
+/* line 12, ../sass/_exp.sass */
+.exp > .comp > .corp > .dep {
+  margin: 0 0 1em 0;
+}
+
+/* line 1, ../sass/_skill.sass */
+.skill-border {
+  padding: 1em;
+  border: 1px solid white;
+}
+/* line 4, ../sass/_skill.sass */
+.skill-border > .skill {
+  margin: 0 0 1em 0;
+}
+/* line 6, ../sass/_skill.sass */
+.skill-border > .skill > span.name {
+  display: inline-block;
+  width: 20%;
+}
+/* line 9, ../sass/_skill.sass */
+.skill-border > .skill > .level {
+  display: inline-block;
+  width: 75%;
+  border: 1px solid white;
+}
+/* line 13, ../sass/_skill.sass */
+.skill-border > .skill > .level .curr {
+  width: 0%;
+  height: 21px;
+  -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 3s ease-in-out;
+  -moz-transition: all 3s ease-in-out;
+  -o-transition: all 3s ease-in-out;
+  transition: all 3s ease-in-out;
+}
+/* line 20, ../sass/_skill.sass */
+.skill-border > .des > .lan > ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0.3em 0;
+}
+/* line 24, ../sass/_skill.sass */
+.skill-border > .des > .lan > ul > li {
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 0.3em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 32, ../sass/_skill.sass */
+.skill-border > .des > .name {
+  margin: 0 0 0.2em 0;
+}
+
+/* line 1, ../sass/_color.sass */
+.html5 {
+  background: #f9623b;
+}
+
+/* line 3, ../sass/_color.sass */
+.javascript {
+  background: #f58233;
+}
+
+/* line 5, ../sass/_color.sass */
+.css3 {
+  background: #4f93c1;
+}
+
+/* line 7, ../sass/_color.sass */
+.cCode {
+  background: #994aad;
+}
+
+/* line 9, ../sass/_color.sass */
+.illustrator {
+  background: #ff731b;
+}
+
+/* line 11, ../sass/_color.sass */
+.ps {
+  background: #4d549c;
+}
+
+/* line 2, ../sass/_portfolio.sass */
+.project-link > a:not(:last-child) {
+  margin: 0 1em 0 0;
+}
+/* line 4, ../sass/_portfolio.sass */
+.project-link > a:not(:last-child):after {
+  content: "|";
+  width: 1px;
+  height: 1px;
+  padding: 0 0 0 1em;
+}
+
+/* line 11, ../sass/_portfolio.sass */
+.portfolio > .col.m3 > .border {
+  border: 1px solid white;
+  margin: 1em 0;
+}
+/* line 15, ../sass/_portfolio.sass */
+.portfolio > .col.m3 > .border > a > img {
+  width: 100%;
+  height: 150px;
+}
+/* line 18, ../sass/_portfolio.sass */
+.portfolio > .col.m3 > .border:hover {
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+/* line 1, ../sass/_lightbox.sass */
+.light-box {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  overflow: auto;
+}
+/* line 10, ../sass/_lightbox.sass */
+.light-box > .box {
+  width: 60%;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 0 auto;
+  padding: 1em;
+}
+/* line 15, ../sass/_lightbox.sass */
+.light-box > .box > .border {
+  border: 1px solid white;
+  padding: 1em;
+}
+/* line 18, ../sass/_lightbox.sass */
+.light-box > .box > .border > .title {
+  color: white;
+  font-size: 18pt;
+  font-weight: bold;
+}
+/* line 22, ../sass/_lightbox.sass */
+.light-box > .box > .border > .des {
+  color: white;
+  font-size: 12pt;
+}
+/* line 25, ../sass/_lightbox.sass */
+.light-box > .box > .border > .close {
+  cursor: pointer;
+}
+/* line 27, ../sass/_lightbox.sass */
+.light-box > .box > .border > .close > .line {
+  width: 30px;
+  height: 10px;
+  border-top: 2px solid white;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 32, ../sass/_lightbox.sass */
+.light-box > .box > .border > .close:hover > .line:nth-child(2) {
+  width: 0;
+  height: 0;
+}
+/* line 35, ../sass/_lightbox.sass */
+.light-box > .box > .border > .close:hover > .line:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 37, ../sass/_lightbox.sass */
+.light-box > .box > .border > .close:hover > .line:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin: -12px 0 0 5px;
+}
+
+/* line 41, ../sass/_lightbox.sass */
+.lightbox::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+/* line 43, ../sass/_lightbox.sass */
+.lightbox::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 46, ../sass/_lightbox.sass */
+.lightbox::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.6);
+  outline: 0px solid red;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 1, ../sass/_goTop.sass */
+.go-top {
+  position: fixed;
+  right: 0.5em;
+  color: white;
+  padding: 1em 1.2em;
+  border: 1px solid white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  bottom: 2em;
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 12, ../sass/_goTop.sass */
+.go-top:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
